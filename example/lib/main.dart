@@ -4,10 +4,11 @@ import 'package:intercom_flutter/intercom_flutter.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Intercom.initialize(
-    'appId',
-    androidApiKey: 'androidApiKey',
-    iosApiKey: 'iosApiKey',
+    'ackiqn5b',
+    androidApiKey: 'android_sdk-6e057289e92b9327a244a4157a7805a8da142014',
+    iosApiKey: 'ios_sdk-a749554855c29d7d6f03822e345843ba56237a3b',
   );
+  await Intercom.registerIdentifiedUser(email: 'john.musleh@gmail.com');
   runApp(SampleApp());
 }
 
